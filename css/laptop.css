@@ -1,0 +1,475 @@
+/* common CSS */
+* {
+  margin: 0px;
+  font-family: "fontello";
+  padding: 0;
+  box-sizing: unset;
+}
+a{
+  text-decoration: none;
+  color: black;
+}
+body {
+  width: 100%;
+  justify-items: center;
+}
+
+h1 {
+  font-size: 32px;
+}
+
+p {
+  font-size: 18px;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.icon-1 {
+  color: rgb(54, 150, 235);
+}
+
+.horizontal-list {
+  padding-top: 28px;
+  list-style-type: none;
+  display: flex;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.hidden{
+  display: none !important;
+}
+
+.error{
+  color: red;
+}
+
+
+
+/* article */
+
+.container {
+  display: grid;
+  /* grid-template-columns: 1fr; 
+  Giá trị mặc định 1fr = minmax(auto, 1fr), điều này làm ảnh sẽ giữ kích thước gốc nếu chúng bị scale nhỏ hơn*/
+  grid-template-columns: minmax(
+    0,
+    1fr
+  ); /* Giá trị này sẽ giúp ảnh scale theo kích thước lưới và không giữ kích thước cố định nữa*/
+
+  margin: auto 5%;
+  width: 100%;
+  justify-items: stretch;
+}
+
+.container {
+  display: grid;
+  width: auto; 
+  margin: 0 20px; 
+  grid-template-columns: 1fr; 
+  justify-items: center; 
+  
+}
+
+/* Đảm bảo ảnh Banner không bị giới hạn kích thước ngầm */
+.banner-header, .avatar {
+  width: 100%;
+  display: block;
+}
+
+.banner-header{
+  position: relative;
+}
+
+.avatar {
+  display: block;
+  width: 100%;
+  height: auto;
+  position: relative;
+}
+.avatar-float-container{
+  width: 200px;
+  position: absolute;
+  transform: translateY(-50%); /*Căn giữa theo trục Y*/
+}
+.avatar-float-image{
+  width: 100%;
+  aspect-ratio: 100%;
+  border-radius: 50%;
+  border: 10px solid white ;
+}
+
+.text-wrap {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.float-text {
+  color: white;
+  margin: 6px auto;
+}
+
+/* personal information */
+.nav {
+  display: flex;
+  justify-content: center;
+  margin: 4px 0;
+}
+
+.nav-item {
+  border-left: 1px solid #eee;
+  border-right: 1px solid #eee;
+  display: flex;
+  align-self: center;
+  justify-content: center;
+  width: 160px;
+  text-align: center;
+}
+
+.personal-info-container {
+  display: flex;
+}
+
+.personal-info-item {
+  flex: 50% 1;
+  align-items: center;
+  padding: 50px;
+}
+.personal-info-title {
+  padding-bottom: 36px;
+}
+.personal-info-item:first-child {
+  background-color: #eee;
+}
+.personal-info-item:last-child {
+  background-color: #eaeaea;
+}
+.personal-info-list {
+  list-style-type: none;
+}
+
+.personal-contact {
+  color: rgb(45, 136, 227);
+}
+
+/* career information */
+.career-info {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: min-content;
+  margin: auto 50px;
+  row-gap: 50px;
+  column-gap: 30px;
+  padding: 20px 0;
+}
+
+.card-section {
+  border: 2px solid #ddd;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: 7fr 3fr;
+  grid-template-rows: auto 1fr;
+}
+
+.card-item-icon {
+  font-size: 36px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-item-content {
+  padding-top: 20px;
+  grid-column: 1 / -1;
+}
+
+.card-entry-list {
+  list-style-type: none;
+  line-height: 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding-left: 12px;
+}
+
+.card-entry-details {
+  list-style-type: "- ";
+  /* margin-left: 16px; */
+  padding-left: 6px;
+}
+
+.card-entry-details > li{
+  padding-left: 6px;
+}
+
+.card-time {
+  font-style: italic;
+}
+
+.card-time-now {
+  border-radius: 4px;
+  background-color: rgb(69, 159, 244);
+  padding: 2px 5px;
+  color: white;
+}
+
+.card-entry-details-header {
+  list-style-type: none;
+  padding-left: 0px;
+}
+
+.card-entry-header {
+  font-weight: bold;
+}
+
+.hobby-list {
+  padding-top: 12px;
+  padding-left: 0;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  list-style-type: none;
+  justify-self: center;
+}
+
+.hobby-icon {
+  font-size: 24px;
+  border: 4px solid rgb(128, 200, 102);
+  border-radius: 50%;
+  height: 24px;
+  aspect-ratio: 1; /* Tạo kích thước hình vuông, khi đó border radius sẽ cho ra hình tròn*/
+  padding: 12px;
+}
+
+.hobby-item {
+  justify-items: center;
+  align-items: center;
+}
+
+.level-title {
+  font-size: 20px;
+  font-weight: bold;
+  padding-bottom: 8px;
+}
+
+.level-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 8px;
+  column-gap: 40px;
+  padding: 6px;
+}
+
+.level-item {
+  border-radius: 8px;
+  background-color: rgba(100, 100, 100, 0.485);
+}
+
+.level-score {
+  background-color: rgb(79, 149, 247);
+}
+
+/* certification */
+
+.certification {
+  justify-self: stretch;
+  background-color: #eee;
+  padding: 26px 0;
+  justify-items: center;
+  
+}
+.cert-wrap{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.cert-header {
+  padding-bottom: 24px;
+  font-weight: 500;
+  align-self: start;
+}
+
+.cert-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); 
+  gap: 20px 0px;
+  width: 100%;
+}
+
+.cert-grid > * {
+  position: relative;
+}
+
+/* vertical border */
+.cert-grid > *:nth-child(even)::before {
+  content: "";
+  position: absolute;
+  left: 0xp;
+  top: 10px;
+  bottom: 10px;
+
+  width: 2px;
+  background-color: #d6c08d;
+}
+
+/* horizontal-border (CSS trực tiếp cho phần tử 1 và 2*/
+/* 
+  - Việc sử dụng background + gap để làm border sẽ gặp lỗi tô màu nếu có các ô trống
+  - Việc sử dụng border-left + border-bottom sau đó áp dụng css selector 
+  sẽ gặp vấn đề border chạm nhau, không căn chỉnh được padding (không giống yêu cầu)
+  - Nếu CSS border-bottom cho toàn bộ children thì hàng cuối vẫn giữ border
+  -> Do chưa có phương án, tạm chấp nhận CSS cứng cho hàng đầu tiên
+*/
+.cert-grid > *:nth-child(-n + 2)::after {
+  content: "";
+  position: absolute;
+  bottom: -4px;
+
+  left: 0;
+  right: 0;
+
+  height: 2px;
+  background-color: #d6c08d;
+}
+
+.cert-content {
+  padding: 12px 4px;
+  display: flex;
+  flex-direction: row;
+}
+
+.cert-info {
+  margin-top: 8px;
+  margin-left: 12px;
+}
+
+.cert-image {
+  width: 256px;
+}
+
+.cert-title {
+  font-weight: 400;
+}
+
+.cert-list {
+  list-style-type: "- ";
+  padding-left: 20px;
+}
+
+/* project */
+.project {
+  padding: 24px 0px;
+}
+
+.project-header {
+  /* padding-bottom: 24px; */
+  font-weight: 500;
+  
+}
+
+.project-grid{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 20px;
+}
+.project-content{
+  margin: 20px 0;
+  border: 2px solid #eee;
+  display: flex;
+  flex-direction: column;
+}
+.project-content > *{
+  border: 1px solid #eee;
+}
+.project-image {
+   width: 100%;
+}
+.project-title{
+  font-weight: bold;
+  padding: 4px 8px;
+  text-transform: uppercase;
+}
+
+.project-metadata{
+  display: flex;
+  gap: 20px;
+  padding-left: 20px;
+  align-items: center;
+}
+
+.project-metadata-wraper{
+  display: flex;
+  flex-direction: row;
+}
+
+.project-time{
+  margin: 5px;
+  padding: 2px 8px;
+  border-radius: 40%;
+  background-color: #46bff7;
+}
+
+.project-description-grid {
+  display: grid;
+  grid-template-columns: 2fr 8fr;
+  row-gap: 10px;
+  padding: 15px;
+  align-items: stretch;
+}
+
+.project-description-grid > div {
+  border-bottom: 2px solid #eee;
+}
+/* Xoá bỏ border ở 2 item cuối */
+.project-description-grid > div:nth-last-child(-n+2) {
+  border-bottom: none;
+}
+
+.project-description-header {
+  font-weight: bold;
+  color: #333;
+  align-self: start; 
+  padding-top: 2px;
+  align-self: stretch;
+  
+}
+
+.project-description-data{
+  color: #555;
+  line-height: 1.6;
+  padding-right: 6px;
+  padding-left: 12px;
+}
+
+
+/* contact */
+footer {
+  justify-self: stretch;
+  width: 100%;
+  height: auto;
+  background-color: #eee;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+  font-size: 1.5vw; /*Lấy kích thước theo đơn vị độ rộng màn hình (viewport width)*/
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  padding: 20px 12px;
+  font-size: 100%; 
+}
+
+.contact-icon {
+  color: #46bff7;
+  font-size: 200%; 
+  margin-right: 10px;
+}
