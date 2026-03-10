@@ -1,0 +1,39 @@
+@media screen and (max-width: 767px) {
+  .nav-item.resp {
+    display: none;
+  }
+  .nav{
+    flex-direction: column;
+  }
+  .nav-item{
+    justify-content: flex-start;
+    align-content: start;
+    padding: 8px;
+  }
+  .avatar-float-image {
+    display: none;
+  }
+
+  .personal-info-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .career-info {
+    grid-template-columns: minmax(0, 1fr);
+    margin: 0xp;
+    row-gap: 20px;
+  }
+
+  .cert-grid > *:nth-child(even)::before {
+    display: none;
+  }
+
+  .cert-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .project-grid{
+    grid-template-columns:  1fr;
+  }
+}
