@@ -1,5 +1,5 @@
 @media screen and (max-width: 767px) {
-  .nav-item.resp {
+  .nav-item-holder {
     display: none;
   }
   .nav{
@@ -21,8 +21,6 @@
 
   .career-info {
     grid-template-columns: minmax(0, 1fr);
-    margin: 0xp;
-    row-gap: 20px;
   }
 
   .cert-grid > *:nth-child(even)::before {

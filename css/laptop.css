@@ -36,9 +36,6 @@ p {
   display: flex;
 }
 
-.uppercase {
-  text-transform: uppercase;
-}
 
 .hidden{
   display: none !important;
@@ -48,32 +45,6 @@ p {
   color: red;
 }
 
-
-
-/* article */
-
-.container {
-  display: grid;
-  /* grid-template-columns: 1fr; 
-  Giá trị mặc định 1fr = minmax(auto, 1fr), điều này làm ảnh sẽ giữ kích thước gốc nếu chúng bị scale nhỏ hơn*/
-  grid-template-columns: minmax(
-    0,
-    1fr
-  ); /* Giá trị này sẽ giúp ảnh scale theo kích thước lưới và không giữ kích thước cố định nữa*/
-
-  margin: auto 5%;
-  width: 100%;
-  justify-items: stretch;
-}
-
-.container {
-  display: grid;
-  width: auto; 
-  margin: 0 20px; 
-  grid-template-columns: 1fr; 
-  justify-items: center; 
-  
-}
 
 /* Đảm bảo ảnh Banner không bị giới hạn kích thước ngầm */
 .banner-header, .avatar {
@@ -117,34 +88,15 @@ p {
 }
 
 /* personal information */
-.nav {
-  display: flex;
-  justify-content: center;
-  margin: 4px 0;
-}
 
 .nav-item {
-  border-left: 1px solid #eee;
-  border-right: 1px solid #eee;
-  display: flex;
-  align-self: center;
-  justify-content: center;
   width: 160px;
-  text-align: center;
 }
 
-.personal-info-container {
-  display: flex;
+.nav-item-holder{
+  width: 200px;
 }
 
-.personal-info-item {
-  flex: 50% 1;
-  align-items: center;
-  padding: 50px;
-}
-.personal-info-title {
-  padding-bottom: 36px;
-}
 .personal-info-item:first-child {
   background-color: #eee;
 }
@@ -160,29 +112,13 @@ p {
 }
 
 /* career information */
-.career-info {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-auto-rows: min-content;
-  margin: auto 50px;
-  row-gap: 50px;
-  column-gap: 30px;
-  padding: 20px 0;
-}
 
 .card-section {
   border: 2px solid #ddd;
   padding: 20px;
   display: grid;
   grid-template-columns: 7fr 3fr;
-  grid-template-rows: auto 1fr;
-}
-
-.card-item-icon {
-  font-size: 36px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  grid-template-rows: auto 1fr; 
 }
 
 .card-item-content {
@@ -201,7 +137,6 @@ p {
 
 .card-entry-details {
   list-style-type: "- ";
-  /* margin-left: 16px; */
   padding-left: 6px;
 }
 
@@ -364,26 +299,15 @@ p {
 }
 
 /* project */
-.project {
-  padding: 24px 0px;
-}
-
-.project-header {
-  /* padding-bottom: 24px; */
-  font-weight: 500;
-  
-}
 
 .project-grid{
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   column-gap: 20px;
 }
+
 .project-content{
-  margin: 20px 0;
   border: 2px solid #eee;
-  display: flex;
-  flex-direction: column;
 }
 .project-content > *{
   border: 1px solid #eee;
@@ -421,6 +345,7 @@ p {
   grid-template-columns: 2fr 8fr;
   row-gap: 10px;
   padding: 15px;
+  flex-grow: 1; /* Chiếm phần còn lại của flex container*/
   align-items: stretch;
 }
 
@@ -451,25 +376,17 @@ p {
 
 /* contact */
 footer {
-  justify-self: stretch;
   width: 100%;
   height: auto;
   background-color: #eee;
-  display: flex;
-  justify-content: center;
-  margin-bottom: 40px;
   font-size: 1.5vw; /*Lấy kích thước theo đơn vị độ rộng màn hình (viewport width)*/
 }
 
 .contact-item {
-  display: flex;
-  align-items: center;
-  padding: 20px 12px;
   font-size: 100%; 
 }
 
 .contact-icon {
   color: #46bff7;
   font-size: 200%; 
-  margin-right: 10px;
 }

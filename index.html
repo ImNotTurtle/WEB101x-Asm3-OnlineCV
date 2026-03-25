@@ -18,49 +18,46 @@
     <title>Assignment02</title>
   </head>
   <body>
-    <article class="container">
+    <article class="d-flex flex-column gap-4 justify-content-center mx-4" style="width: auto;">
       <!-- Header: Banner image -->
       <header class="banner-header">
         <img class="avatar" src="images/banner.jpg" alt="Banner Image" />
         <div class="text-wrap">
-          <h1 class="float-text">Nguyễn Văn A</h1>
-          <p class="float-text">Full Stack Developer</p>
+          <h1 class="float-text">Phạm Hồng Quy</h1>
+          <p class="float-text">IOT Software Developer</p>
         </div>
       </header>
       <!-- Navbar: Article navigation -->
-      <nav class="nav">
+      <nav class="nav d-flex justify-content-center">
         <!-- Persional information -->
-        <div class="nav-item uppercase">
+        <div
+          class="nav-item text-uppercase d-flex justify-content-center align-self-center text-align-center border border-1 border-top-0 border-bottom-0 border-color-light"
+        >
           <a href="#personal-information">
             <i class="icon-user icon-1"></i> Thông tin
           </a>
         </div>
         <!-- Career information -->
-        <div class="nav-item uppercase">
+        <div
+          class="nav-item text-uppercase d-flex justify-content-center align-self-center text-align-center border border-1 border-top-0 border-bottom-0 border-color-light"
+        >
           <a href="#career-information">
             <i class="icon-doc-text-inv icon-1"></i> Lý lịch
           </a>
         </div>
-        <!-- Name + Position -->
-        <div class="nav-item resp" style="width: 260px">
-          <div>
-            <h2 class="uppercase">Nguyễn Văn A</h2>
-            <p
-              class="uppercase"
-              style="font-size: 12px; color: rgba(0, 0, 0, 0.5)"
-            >
-              Full Stack Developer
-            </p>
-          </div>
-        </div>
+        <div class="nav-item-holder"></div>
         <!-- Certification -->
-        <div class="nav-item uppercase">
+        <div
+          class="nav-item text-uppercase d-flex justify-content-center align-self-center text-align-center border border-1 border-top-0 border-bottom-0 border-color-light"
+        >
           <a href="#certification"
             ><i class="icon-mail-alt icon-1"></i> Chứng chỉ</a
           >
         </div>
         <!-- Project -->
-        <div class="nav-item uppercase">
+        <div
+          class="nav-item text-uppercase d-flex justify-content-center align-self-center text-align-center border border-1 border-top-0 border-bottom-0 border-color-light"
+        >
           <a href="#project"><i class="icon-star-1 icon-1"></i> Dự án</a>
         </div>
         <!-- Avatar image -->
@@ -73,23 +70,23 @@
         </div>
       </nav>
       <!-- Persional information -->
-      <div class="personal-info-container">
-        <div class="personal-info-item">
-          <h2 class="personal-info-title">Mục tiêu nghề nghiệp</h2>
+      <div class="d-flex flex-wrap justify-content-center">
+        <div class="p-5 w-50 flex-shrink-1 align-items-center">
+          <h2 class="pb-4">Mục tiêu nghề nghiệp</h2>
           <p>
-            Là một sinh viên đã hoàn thành chương trình chứng chỉ Doanh Nghiệp
-            của FUNiX. Em mong muốn mình sẽ đi làm việc với vị trí Fullstack
+            Là một sinh viên đã hoàn thành chương trình đào tạo chứng chỉ chuyên
+            ngành IOT. Em mong muốn mình sẽ làm việc ở vị trí IOT Software
             Developer, có thể vận dụng những kiến thức đã được trau dồi và không
             ngừng học hỏi phát triển bản thân, cũng như hoàn thành tốt nhất công
             việc được giao.
           </p>
         </div>
-        <div class="personal-info-item">
-          <h2 class="personal-info-title">Thông tin cá nhân</h2>
+        <div class="p-5 w-50 flex-shrink-1 align-items-center" style="background: #eee;">
+          <h2 class="pb-4">Thông tin cá nhân</h2>
           <div id="personal-information" class="hidden">
             <ul class="personal-info-list">
               <li><strong>Giới tính</strong>: Nam</li>
-              <li><strong>Ngày sinh</strong>: 19/05/2000</li>
+              <li><strong>Ngày sinh</strong>: 26/06/2002</li>
               <li><strong>Điện thoại</strong>: (+84) 912398xxx</li>
               <li><strong>Email</strong>: sinhvien@funix.edu.vn</li>
               <li><strong>Địa chỉ</strong>: Hà Nội, Việt Nam</li>
@@ -124,196 +121,257 @@
         </div>
       </div>
       <!-- Career information -->
-      <div id="career-information" class="career-info">
-        <div id="experience" class="card-section">
-          <h2 class="card-item-header">Kinh nghiệm</h2>
-          <div class="card-item-icon"><i class="ic-toolbox"></i></div>
-          <div class="card-item-content">
-            <ul class="card-entry-list">
-              <li>
-                <p class="card-entry-header">Công ty Y</p>
-                <div>
-                  <span class="card-time">05/2022 - </span
-                  ><span class="card-time-now">Hiện tại</span>
-                </div>
-                <span class="card-entry-details-header"
-                  >Full Stack Developer</span
-                >
-                <ul class="card-entry-details">
+      <div id="career-information" class="container career-info">
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-6 col-lg-4 mb-3">
+            <div id="experience" class="card-section">
+              <h2 class="card-item-header">Kinh nghiệm</h2>
+              <div
+                class="fs-1 d-flex justify-content-center align-items-center"
+              >
+                <i class="ic-toolbox"></i>
+              </div>
+              <div class="card-item-content">
+                <ul class="card-entry-list">
                   <li>
-                    Xây dựng, phát triển Website dựa trên thiết kế và yêu cầu đã
-                    có.
+                    <p class="card-entry-header">Công ty Y</p>
+                    <div>
+                      <span class="card-time">05/2022 - </span
+                      ><span class="card-time-now">Hiện tại</span>
+                    </div>
+                    <span class="card-entry-details-header"
+                      >Full Stack Developer</span
+                    >
+                    <ul class="card-entry-details">
+                      <li>
+                        Xây dựng, phát triển Website dựa trên thiết kế và yêu
+                        cầu đã có.
+                      </li>
+                      <li>
+                        Phân tích và thiết kế Database, sử dụng các hệ quản trị
+                        CSDL (MySQL, SQLServer, NoSQL,...) và viết được các câu
+                        truy vấn.
+                      </li>
+                      <li>
+                        Sử dụng ngôn ngữ server-side (Python, Java,...) để xây
+                        dựng các WebServer
+                      </li>
+                    </ul>
                   </li>
                   <li>
-                    Phân tích và thiết kế Database, sử dụng các hệ quản trị CSDL
-                    (MySQL, SQLServer, NoSQL,...) và viết được các câu truy vấn.
+                    <p class="card-entry-header">Công ty X</p>
+                    <div><span class="card-time">06/2021 - 04/2022</span></div>
+                    <span class="card-entry-details-header">Web Designer</span>
+                    <ul class="card-entry-details">
+                      <li>Thiết kế Website dựa trên yêu cầu của khách hàng.</li>
+                      <li>Sử dụng các công cụ: Figma, Canvas, PTS.</li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4 mb-4">
+            <div id="education" class="card-section">
+              <h2 class="card-item-header">Học vấn</h2>
+              <div
+                class="fs-1 d-flex justify-content-center align-items-center"
+              >
+                <i class="ic-pencil"></i>
+              </div>
+              <div class="card-item-content">
+                <ul class="card-entry-list">
+                  <li>
+                    <p class="card-entry-header">Funix</p>
+                    <div>
+                      <span class="card-time">06/2021 - 05/2022</span>
+                    </div>
+                    <ul class="card-entry-details">
+                      <li>Tốt nghiệp chứng chỉ doanh nghiệp nhánh Fullstack</li>
+                      <li>GPA: 9 / 10</li>
+                    </ul>
                   </li>
                   <li>
-                    Sử dụng ngôn ngữ server-side (Python, Java,...) để xây dựng
-                    các WebServer
+                    <p class="card-entry-header">Cử nhân - ĐH FPT</p>
+                    <div>
+                      <span class="card-time">08/2016 - 07/2019</span>
+                    </div>
+                    <ul class="card-entry-details">
+                      <li>Chuyên ngành: Kỹ thuật phần mềm</li>
+                      <li>GPA: 3.2 / 4</li>
+                    </ul>
+                  </li>
+                  <li>
+                    <p class="card-entry-header">Đại học Hà Nội</p>
+                    <div>
+                      <span class="card-time">08/2016 - 02/2018</span>
+                    </div>
+                    <ul class="card-entry-details">
+                      <li>Hệ từ xa, Chuyên ngành: Ngôn ngữ Nhật</li>
+                      <li>GPA: 2.8 / 4</li>
+                    </ul>
                   </li>
                 </ul>
-              </li>
-              <li>
-                <p class="card-entry-header">Công ty X</p>
-                <div><span class="card-time">06/2021 - 04/2022</span></div>
-                <span class="card-entry-details-header">Web Designer</span>
-                <ul class="card-entry-details">
-                  <li>Thiết kế Website dựa trên yêu cầu của khách hàng.</li>
-                  <li>Sử dụng các công cụ: Figma, Canvas, PTS.</li>
-                </ul>
-              </li>
-            </ul>
+              </div>
+            </div>
           </div>
-        </div>
-        <div id="education" class="card-section">
-          <h2 class="card-item-header">Học vấn</h2>
-          <div class="card-item-icon"><i class="ic-pencil"></i></div>
-          <div class="card-item-content">
-            <ul class="card-entry-list">
-              <li>
-                <p class="card-entry-header">Funix</p>
-                <div><span class="card-time">06/2021 - 05/2022</span></div>
-                <ul class="card-entry-details">
-                  <li>Tốt nghiệp chứng chỉ doanh nghiệp nhánh Fullstack</li>
-                  <li>GPA: 9 / 10</li>
+
+          <div class="col-12 col-md-6 col-lg-4 mb-4">
+            <div id="activity" class="card-section">
+              <h2 class="card-item-header">Hoạt động</h2>
+              <div
+                class="fs-1 d-flex justify-content-center align-items-center"
+              >
+                <i class="ic-toolbox"></i>
+              </div>
+              <div class="card-item-content">
+                <ul class="card-entry-list">
+                  <li>
+                    <p class="card-entry-header">FPT Hackathon 2019</p>
+                    <div>
+                      <span class="card-time">03/2019 - 05/2019</span>
+                    </div>
+                    <ul class="card-entry-details">
+                      <li>Giải 3 bảng A</li>
+                      <li>Đề tài: Trang web về phân loại rác thải.</li>
+                    </ul>
+                  </li>
+                  <li>
+                    <p class="card-entry-header">Câu lạc bộ Z</p>
+                    <div>
+                      <span class="card-time">08/2018 - 08/2019</span>
+                    </div>
+                    <ul class="card-entry-details">
+                      <li>Trưởng ban chuyên môn</li>
+                    </ul>
+                  </li>
+                  <li>
+                    <p class="card-entry-header">Câu lạc bộ Z</p>
+                    <div><span class="card-time">08/2016</span></div>
+                    <ul class="card-entry-details">
+                      <li>
+                        Hỗ trợ tổ chức tuần lễ văn hoá Việt Nam - Nhật Bản
+                      </li>
+                    </ul>
+                  </li>
                 </ul>
-              </li>
-              <li>
-                <p class="card-entry-header">Cử nhân - ĐH FPT</p>
-                <div><span class="card-time">08/2016 - 07/2019</span></div>
-                <ul class="card-entry-details">
-                  <li>Chuyên ngành: Kỹ thuật phần mềm</li>
-                  <li>GPA: 3.2 / 4</li>
-                </ul>
-              </li>
-              <li>
-                <p class="card-entry-header">Đại học Hà Nội</p>
-                <div><span class="card-time">08/2016 - 02/2018</span></div>
-                <ul class="card-entry-details">
-                  <li>Hệ từ xa, Chuyên ngành: Ngôn ngữ Nhật</li>
-                  <li>GPA: 2.8 / 4</li>
-                </ul>
-              </li>
-            </ul>
+              </div>
+            </div>
           </div>
-        </div>
-        <div id="activity" class="card-section">
-          <h2 class="card-item-header">Hoạt động</h2>
-          <div class="card-item-icon"><i class="ic-toolbox"></i></div>
-          <div class="card-item-content">
-            <ul class="card-entry-list">
-              <li>
-                <p class="card-entry-header">FPT Hackathon 2019</p>
-                <div><span class="card-time">03/2019 - 05/2019</span></div>
-                <ul class="card-entry-details">
-                  <li>Giải 3 bảng A</li>
-                  <li>Đề tài: Trang web về phân loại rác thải.</li>
+
+          <div class="col-12 col-md-6 col-lg-4 mb-4">
+            <div id="hobby" class="card-section">
+              <h2 class="card-item-header">Sở thích</h2>
+              <div
+                class="fs-1 d-flex justify-content-center align-items-center"
+              >
+                <i class="ic-telescope"></i>
+              </div>
+              <div class="card-item-content">
+                <ul class="hobby-list">
+                  <li class="hobby-item">
+                    <div class="hobby-icon">
+                      <i class="ic-megaphone"></i>
+                    </div>
+                    <div>Âm nhạc</div>
+                  </li>
+                  <li class="hobby-item">
+                    <div class="hobby-icon">
+                      <i class="ic-strategy"></i>
+                    </div>
+                    <div>Chơi game</div>
+                  </li>
+                  <li class="hobby-item">
+                    <div class="hobby-icon">
+                      <i class="ic-hotairballoon"></i>
+                    </div>
+                    <div>Du lịch</div>
+                  </li>
+                  <li class="hobby-item">
+                    <div class="hobby-icon"><i class="ic-basket"></i></div>
+                    <div>Nấu ăn</div>
+                  </li>
                 </ul>
-              </li>
-              <li>
-                <p class="card-entry-header">Câu lạc bộ Z</p>
-                <div><span class="card-time">08/2018 - 08/2019</span></div>
-                <ul class="card-entry-details">
-                  <li>Trưởng ban chuyên môn</li>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-4 mb-4">
+            <div id="language" class="card-section">
+              <h2 class="card-item-header">Ngôn ngữ</h2>
+              <div
+                class="fs-1 d-flex justify-content-center align-items-center"
+              >
+                <i class="ic-mic"></i>
+              </div>
+              <div class="card-item-content">
+                <ul class="card-entry-list">
+                  <li>
+                    <p class="level-title">English - IELTS 7.0</p>
+                    <div class="level-grid">
+                      <div class="level-item level-score"></div>
+                      <div class="level-item level-score"></div>
+                      <div class="level-item"></div>
+                    </div>
+                  </li>
+                  <li>
+                    <p class="level-title">Japanese - N3</p>
+                    <div class="level-grid">
+                      <div class="level-item level-score"></div>
+                      <div class="level-item"></div>
+                      <div class="level-item"></div>
+                    </div>
+                  </li>
                 </ul>
-              </li>
-              <li>
-                <p class="card-entry-header">Câu lạc bộ Z</p>
-                <div><span class="card-time">08/2016</span></div>
-                <ul class="card-entry-details">
-                  <li>Hỗ trợ tổ chức tuần lễ văn hoá Việt Nam - Nhật Bản</li>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-4 mb-4">
+            <div id="skill" class="card-section">
+              <h2 class="card-item-header">Kỹ Năng</h2>
+              <div
+                class="fs-1 d-flex justify-content-center align-items-center"
+              >
+                <i class="ic-tools-2"></i>
+              </div>
+              <div class="card-item-content">
+                <ul class="card-entry-list">
+                  <li>
+                    <p class="level-title">HTML/CSS: Fundamental</p>
+                    <div class="level-grid">
+                      <div class="level-item level-score"></div>
+                      <div class="level-item"></div>
+                      <div class="level-item"></div>
+                    </div>
+                  </li>
+                  <li>
+                    <p class="level-title">Javascript: Intermediate</p>
+                    <div class="level-grid">
+                      <div class="level-item level-score"></div>
+                      <div class="level-item level-score"></div>
+                      <div class="level-item"></div>
+                    </div>
+                  </li>
+                  <li>
+                    <p class="level-title">NodeJS: Intermediate</p>
+                    <div class="level-grid">
+                      <div class="level-item level-score"></div>
+                      <div class="level-item level-score"></div>
+                      <div class="level-item"></div>
+                    </div>
+                  </li>
+                  <li>
+                    <p class="level-title">Bootstrap 5: Fundamental</p>
+                    <div class="level-grid">
+                      <div class="level-item level-score"></div>
+                      <div class="level-item"></div>
+                      <div class="level-item"></div>
+                    </div>
+                  </li>
                 </ul>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div id="'hobby" class="card-section">
-          <h2 class="card-item-header">Sở thích</h2>
-          <div class="card-item-icon"><i class="ic-telescope"></i></div>
-          <div class="card-item-content">
-            <ul class="hobby-list">
-              <li class="hobby-item">
-                <div class="hobby-icon"><i class="ic-megaphone"></i></div>
-                <div>Âm nhạc</div>
-              </li>
-              <li class="hobby-item">
-                <div class="hobby-icon"><i class="ic-strategy"></i></div>
-                <div>Chơi game</div>
-              </li>
-              <li class="hobby-item">
-                <div class="hobby-icon"><i class="ic-hotairballoon"></i></div>
-                <div>Du lịch</div>
-              </li>
-              <li class="hobby-item">
-                <div class="hobby-icon"><i class="ic-basket"></i></div>
-                <div>Nấu ăn</div>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div id="language" class="card-section">
-          <h2 class="card-item-header">Ngôn ngữ</h2>
-          <div class="card-item-icon"><i class="ic-mic"></i></div>
-          <div class="card-item-content">
-            <ul class="card-entry-list">
-              <li>
-                <p class="level-title">English - IELTS 7.0</p>
-                <div class="level-grid">
-                  <div class="level-item level-score"></div>
-                  <div class="level-item level-score"></div>
-                  <div class="level-item"></div>
-                </div>
-              </li>
-              <li>
-                <p class="level-title">Japanese - N3</p>
-                <div class="level-grid">
-                  <div class="level-item level-score"></div>
-                  <div class="level-item"></div>
-                  <div class="level-item"></div>
-                </div>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div id="skill" class="card-section">
-          <h2 class="card-item-header">Kỹ Năng</h2>
-          <div class="card-item-icon"><i class="ic-tools-2"></i></div>
-          <div class="card-item-content">
-            <ul class="card-entry-list">
-              <li>
-                <p class="level-title">HTML/CSS: Fundamental</p>
-                <div class="level-grid">
-                  <div class="level-item level-score"></div>
-                  <div class="level-item"></div>
-                  <div class="level-item"></div>
-                </div>
-              </li>
-              <li>
-                <p class="level-title">Javascript: Intermediate</p>
-                <div class="level-grid">
-                  <div class="level-item level-score"></div>
-                  <div class="level-item level-score"></div>
-                  <div class="level-item"></div>
-                </div>
-              </li>
-              <li>
-                <p class="level-title">NodeJS: Intermediate</p>
-                <div class="level-grid">
-                  <div class="level-item level-score"></div>
-                  <div class="level-item level-score"></div>
-                  <div class="level-item"></div>
-                </div>
-              </li>
-              <li>
-                <p class="level-title">Bootstrap 5: Fundamental</p>
-                <div class="level-grid">
-                  <div class="level-item level-score"></div>
-                  <div class="level-item"></div>
-                  <div class="level-item"></div>
-                </div>
-              </li>
-            </ul>
+              </div>
+            </div>
           </div>
         </div>
 
@@ -372,10 +430,10 @@
         </div>
       </div>
       <!-- Project -->
-      <div id="project" class="project">
-        <h2 class="project-header">Dự án</h2>
+      <div id="project" class="project px-4">
+        <h2 class="project-header fw-bold">Dự án</h2>
         <div class="project-grid">
-          <div class="project-content">
+          <div class="project-content my-4 d-flex flex-column">
             <img
               class="project-image"
               src="images/project_1.png"
@@ -404,7 +462,7 @@
             </div>
           </div>
 
-          <div class="project-content">
+          <div class="project-content my-4 d-flex flex-column">
             <img
               class="project-image"
               src="images/project_2.png"
@@ -435,7 +493,7 @@
             </div>
           </div>
 
-          <div class="project-content">
+          <div class="project-content my-4 d-flex flex-column">
             <img
               class="project-image"
               src="images/project_3.png"
@@ -468,20 +526,20 @@
         </div>
       </div>
       <!-- Contact -->
-      <footer id="contact" class="contact">
+      <footer id="contact" class="contact d-flex justify-content-center justify-self-stretch mb-5">
         <a href="#"
-          ><div class="contact-item">
-            <i class="icon-facebook-circled contact-icon"></i>Facebook
+          ><div class="contact-item d-flex px-3 align-items-center py-4">
+            <i class="icon-facebook-circled contact-icon me-3"></i>Facebook
           </div></a
         >
         <a href="#"
-          ><div class="contact-item">
-            <i class="icon-linkedin-circled contact-icon"></i>Linkedin
+          ><div class="contact-item d-flex px-3 align-items-center py-4">
+            <i class="icon-linkedin-circled contact-icon me-3"></i>Linkedin
           </div></a
         >
         <a href="#"
-          ><div class="contact-item">
-            <i class="icon-github-circled contact-icon"></i>Github
+          ><div class="contact-item d-flex px-3 align-items-center py-4">
+            <i class="icon-github-circled contact-icon me-3"></i>Github
           </div></a
         >
       </footer>

@@ -4,7 +4,7 @@
     padding-top: 0;
     padding-left: 0px;
   }
-  .nav-item.resp {
+  .nav-item-holder{
     display: none;
   }
   .avatar-float-image {
@@ -18,18 +18,10 @@
 
   .career-info {
     grid-template-columns: repeat(2, 1fr);
-    margin: auto 40px;
-    row-gap: 20px;
-    column-gap: 10px;
-    padding: 10px 0;
   }
   
   .card-section {
     padding: 10px;
-  }
-  
-  .card-item-icon {
-    font-size: 24px;
   }
   
   .card-entry-list {
